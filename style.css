@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+     background-color: rgb(10, 10, 10);
+     color: rgb(18, 180, 174);
+
+     line-height:1.6;
+     text-align:center;
+}
+.container{
+    color: rgb(163, 143, 183);
+    max-width: 960px;
+    margin: auto;
+    padding: 0 30px;
+}
+#showcase{
+    height: 300px;
+}
+
+#showcase h1{
+    font-size: 50px;
+    line-height: 1.4;
+    position: relative;
+    animation: heading;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+
+
+@keyframes heading {
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(200px);
+    }
+}
+
+#content{
+    position: relative;
+    animation-name: content;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes content {
+    0%{transform: translateX(-1000px);}
+    100%{
+        transform: translateX(0);
+    }
+    
+}
+
+
+.btn{
+    display: inline-block;
+    color: rgb(26, 206, 50);
+    text-decoration: none;
+    padding: 15px 25px;
+    border: 1px #e01d1d solid;
+    margin-top: 40px;
+    opacity: 1;
+    animation: btn;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    transition-property: tranform;
+    transition-duration: 1s;
+}
+
+.btn:hover{
+transform: rotateY(180deg);
+}
+
+@keyframes btn {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
